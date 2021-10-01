@@ -28,4 +28,4 @@ jobs:
           context: .
           registry: ghcr.io
           push: ${{ github.event_name != 'pull_request' &&  github.ref == 'refs/heads/main' }}
-          tags: andreaadorno/puppeter-docker
+          tags: ghcr.io/andreaadorno/puppeter-docker
