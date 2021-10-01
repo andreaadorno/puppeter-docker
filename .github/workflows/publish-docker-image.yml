@@ -26,5 +26,6 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           context: .
+          registry: ghcr.io
           push: ${{ github.event_name != 'pull_request' &&  github.ref == 'refs/heads/main' }}
-          tags: puppeter-docker
+          tags: andreaadorno/puppeter-docker
